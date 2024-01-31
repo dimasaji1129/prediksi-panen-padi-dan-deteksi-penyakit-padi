@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padi</title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"/>
+    <!-- icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- css -->
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}" /></head>
+
+<body>
+    <!-- Header -->
+    <header>
+
+        <a href="" class="logo">Padi</a>
+
+        <nav class="navbar">
+            <a href=" #home">Home</a>
+            <a href="{{  url_for('index') }}">Prediksi Panen</a>
+            <a href="{{  url_for('pendeteksi') }}">Deteksi Penyakit</a>
+            <a href="{{  url_for('chat') }}">ChatBot</a>
+            <a href="{{  url_for('ulasan') }}">ulasan</a>
+            <a href="{{  url_for('sentimen') }}">sentimen</a>
+
+        </nav>
+
+        <div class="burger-menu" class="slide">
+            <input type="checkbox" onclick="slide()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+
+    <!-- Hero_Section -->
+
+    <section class="home" id="contact">
+        <div class="home-content">
+
+            <h1>wellcome to my website</h1>
+            <h3>Prediksi Panen <span> Padi</span></h3>
+            <h3>dan Pendeteksi Penyakit <span> Padi</span></h3>
+            <p>disi kalian bisa memprediksi jumlah panen padikalian dan 
+            kalian juga bia mendeteksi penyakit apa yang menyerang tanaman padi kalian  </p>
+
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-tiktok'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href=> </a>
+        </div>
+
+        <div class="home-umage">
+            <img src="{{ url_for('static', filename='app_logo.png') }}" alt="">
+
+        </div>
+
+    </section>
+
+    <!-- Perdiksi panen padi  -->
+
+    <section class="about" id="about">
+
+        <div class="about-img">
+            <img src="{{ url_for('static', filename='Prediksi.png') }}" alt="">
+        </div> 
+
+        <div class="about-content">
+            <h1 class="heading">Prediksi Panen  <span> Padi </span></h1>
+            <H3>Prediksi Panen Padi</H3>
+            <p>
+            </p>
+            <a href="{{  url_for('index') }}"class="btn">Read more....</a>
+        </div>
+
+    </section>
+
+    <!-- pendetaksi penyakit padi -->
+    <section class="home" id="contact">
+        <div class="home-content">
+
+            <h1>Pendeteksi Penyakit  <span> Padi </span></h1>
+            <H3>Pendeteksi Penyakit Padi</H3>
+            <p>
+            </p>
+            <a href="{{  url_for('pendeteksi') }}"class="btn">Read more....</a>
+        </div>
+       
+        <div class="home-umage">
+            <img src="{{ url_for('static', filename='app_logo.png') }}" alt="">
+
+        </div>
+
+    </section>
+
+    <!-- Portfolio-section -->
+    <!-- Contact-Section -->
+    <!-- footer -->
+
+    <!-- <footer class="footer">
+        <div class="footer-text">
+            <p></p>
+            <h2>Review Anda</h2>
+    <form action="/reviews" method="post">
+        <textarea name="review" placeholder="Your review"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+        </div>
+    </footer> -->
+
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>

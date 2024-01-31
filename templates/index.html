@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"
+/>
+<link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}" />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padi </title> 
+</head>
+<body>
+    <header>
+    <a href="" class="logo">Padi</a>
+    <nav class="navbar">
+        <a href="{{  url_for('home') }}">Home</a>
+        <a href="{{  url_for('index') }}">Prediksi Panen</a>
+        <a href="{{  url_for('pendeteksi') }}">Deteksi Penyakit</a>
+        <a href="{{  url_for('chat') }}">ChatBot</a>
+        <a href="{{  url_for('ulasan') }}">ulasan</a>
+        <a href="{{  url_for('sentimen') }}">sentimen</a>        
+
+    </nav>
+    <div class="burger-menu" class="slide">
+        <input type="checkbox" onclick="slide()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+<h3></h3>
+    <div class="container contact-form">
+            <div class="contact-image">
+                <img src="https://cdn-icons-png.flaticon.com/128/616/616428.png" alt="rocket_contact"/>
+            </div>
+            <form action="{{url_for('prediksi')}}" method="post">
+                <h3>Prediksi Panen Padi</h3>
+               <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="Luas Lahan" class="form-control" placeholder="Luas Lahan" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="Luas Panen" class="form-control" placeholder="Luas Panen" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="Bibit" class="form-control" placeholder="Bibit" value="" />
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btnContact">Prediksi</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>{{prediction_text}}<h3>
+                    </div>
+                </div>
+            </form>
+</div>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

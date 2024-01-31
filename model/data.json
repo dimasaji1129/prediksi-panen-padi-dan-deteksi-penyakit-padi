@@ -1,0 +1,133 @@
+{"intents": [
+    {"tag": "noanswer",
+     "patterns": [""],
+     "responses": ["Maaf, saya tidak mengerti apa yang kamu maksud.", 
+        "Maaf, untuk saat ini chatbot ini belum dapat menjawab pertanyaan kamu."],
+     "context": [""]
+    },
+    {"tag": "greeting1",
+     "patterns": ["halo"],
+     "responses": ["Halo,Apakah ada yang bisa dibantu?"],
+     "context": [""]
+    },
+    {"tag": "greeting2",
+        "patterns": ["hello"],
+        "responses": ["Hello,Apakah ada yang bisa dibantu?"],
+        "context": [""]
+    },
+    {"tag": "greeting3",
+        "patterns": ["hai"],
+        "responses": ["Hai,Apakah ada yang bisa dibantu?"],
+        "context": [""]
+    },
+    {
+        "tag": "website_info",
+        "patterns": ["Website ini tentang apa?", "Apa fungsi website ini?", "Bagaimana cara menggunakan website ini?"],
+        "responses": ["sistem ini berfokus pada memprediksi hasil panen padi dan mendeteksi penyakit pada tanaman. Anda dapat menemukan informasi lebih lanjut dan menggunakan fitur-fitur ini untuk meningkatkan pertanian Anda."],
+        "context": ""
+      },
+      {
+        "tag": "app_info",
+        "patterns": ["Apa fungsi aplikasi prediksi hasil panen?", "Bagaimana cara menggunakan aplikasi untuk prediksi hasil panen?"],
+        "responses": ["Aplikasi ini memungkinkan Anda memprediksi hasil panen padi dengan memasukkan informasi seperti luas panen, luas bibit, dan jumlah bibit. Data ini akan digunakan untuk memberikan prediksi hasil panen yang lebih akurat."],
+        "context": ""
+      },
+      {
+        "tag": "disease_detection_info",
+        "patterns": ["Bagaimana aplikasi mendeteksi penyakit pada padi?", "Cara kerja deteksi penyakit pada aplikasi?"],
+        "responses": ["Aplikasi menggunakan teknologi deteksi gambar untuk mendeteksi penyakit pada daun padi. Pengguna dapat mengambil foto daun padi yang dicurigai, dan aplikasi akan menganalisisnya untuk mengidentifikasi penyakit yang mungkin terjadi."],
+        "context": ""
+      },
+      {
+        "tag": "input_parameters",
+        "patterns": ["Apa saja parameter yang perlu dimasukkan untuk prediksi hasil panen?", "Bagaimana cara menginput data untuk prediksi hasil panen?"],
+        "responses": ["Untuk prediksi hasil panen, Anda perlu memasukkan informasi seperti luas panen, luas bibit, dan jumlah bibit padi. Semakin akurat data yang dimasukkan, semakin akurat pula prediksi hasil panen yang dihasilkan."],
+        "context": ""
+      },
+      {
+        "tag": "image_input",
+        "patterns": ["Bagaimana cara menggunakan fitur input gambar untuk deteksi penyakit?", "Cara mengunggah gambar untuk deteksi penyakit pada padi?"],
+        "responses": ["Anda dapat menggunakan fitur input gambar pada aplikasi untuk mendeteksi penyakit pada padi. Caranya dengan mengambil foto daun padi yang mencurigakan dan mengunggahnya ke aplikasi. Aplikasi akan menganalisis gambar untuk mendeteksi penyakit."],
+        "context": ""
+      },
+      {
+        "tag": "data_accuracy",
+        "patterns": ["Seberapa akurat prediksi hasil panen dari aplikasi?", "Apakah hasil prediksi dapat diandalkan?"],
+        "responses": ["Akurasi prediksi hasil panen sangat bergantung pada akurasi data yang dimasukkan oleh pengguna. Semakin akurat informasi yang diberikan, semakin akurat juga prediksi yang dihasilkan oleh aplikasi."],
+        "context": ""
+      },
+      {
+        "tag": "system_requirements",
+        "patterns": ["Apa persyaratan sistem untuk menggunakan aplikasi ini?", "Sistem operasi apa yang didukung oleh aplikasi?"],
+        "responses": ["Aplikasi ini dapat diakses melalui berbagai sistem operasi dan perangkat. Pastikan perangkat Anda terhubung ke internet untuk mendapatkan pembaruan dan hasil analisis terbaru."],
+        "context": ""
+      },
+      {
+        "tag": "support_channels",
+        "patterns": ["Bagaimana saya bisa mendapatkan dukungan teknis?", "Apakah ada layanan dukungan pelanggan?"],
+        "responses": ["Jika Anda membutuhkan dukungan teknis, Anda dapat menghubungi tim dukungan melalui formulir kontak di website atau melalui fitur dukungan dalam aplikasi. Kami siap membantu Anda dengan pertanyaan atau masalah yang Anda miliki."],
+        "context": ""
+      },
+      {
+        "tag": "future_updates",
+        "patterns": ["Apakah ada rencana untuk pembaruan fitur di masa depan?", "Apa yang dapat diharapkan dari pembaruan berikutnya?"],
+        "responses": ["Tim pengembang terus bekerja untuk meningkatkan fungsionalitas aplikasi. Kami berencana untuk menambahkan fitur-fitur baru, meningkatkan keakuratan prediksi, dan menyediakan pengalaman pengguna yang lebih baik melalui pembaruan rutin."],
+        "context": ""
+      },
+      {
+        "tag": "privacy_security",
+        "patterns": ["Bagaimana keamanan data pengguna dijaga?", "Apakah data pengguna aman?"],
+        "responses": ["Keamanan dan privasi data pengguna adalah prioritas kami. Kami menggunakan langkah-langkah keamanan yang ketat untuk melindungi data pengguna dan tidak membagikannya dengan pihak ketiga tanpa izin."],
+        "context": ""
+      },
+      {
+        "tag": "integration",
+        "patterns": ["Apakah aplikasi dapat diintegrasikan dengan perangkat lain?", "Dapatkah aplikasi berintegrasi dengan perangkat keras pertanian?"],
+        "responses": ["Kami bekerja untuk menyediakan kemungkinan integrasi aplikasi dengan perangkat keras pertanian lainnya. Ini akan memberikan solusi yang lebih holistik untuk mendukung kebutuhan pertanian Anda."],
+        "context": ""
+      },
+      {
+        "tag": "crop_recommendation",
+        "patterns": ["Apakah aplikasi memberikan rekomendasi tanaman selain padi?", "Dapatkah aplikasi memberikan saran untuk tanaman lain?"],
+        "responses": ["Saat ini, fokus utama aplikasi adalah pada prediksi hasil panen dan deteksi penyakit pada padi. Namun, kami sedang mempertimbangkan untuk menambahkan fitur rekomendasi tanaman untuk pertanian yang lebih luas di masa mendatang."],
+        "context": ""
+      },
+      {
+        "tag": "application_cost",
+        "patterns": ["Berapa biaya penggunaan aplikasi ini?", "Apakah aplikasi ini berbayar?"],
+        "responses": ["Saat ini, aplikasi ini tersedia secara gratis untuk pengguna. Namun, dalam waktu mendatang, kami mungkin mempertimbangkan opsi langganan premium dengan fitur tambahan."],
+        "context": ""
+      },
+      {
+        "tag": "user_community",
+        "patterns": ["Apakah ada komunitas pengguna untuk berbagi pengalaman?", "Bagaimana cara bergabung dengan komunitas pengguna?"],
+        "responses": ["Ya, kami memiliki komunitas pengguna di berbagai platform sosial. Bergabunglah dengan kami untuk berbagi pengalaman, memperoleh tips, dan terhubung dengan petani lain yang menggunakan aplikasi ini."],
+        "context": ""
+      },
+      {
+        "tag": "training_resources",
+        "patterns": ["Apakah ada sumber daya pelatihan untuk menggunakan aplikasi?", "Dapatkah saya mendapatkan tutorial penggunaan aplikasi?"],
+        "responses": ["Tentu! Kami menyediakan sumber daya pelatihan, tutorial, dan panduan pengguna untuk membantu Anda memahami cara menggunakan semua fitur aplikasi dengan baik."],
+        "context": ""
+      },
+      {
+        "tag": "feedback",
+        "patterns": ["Apakah Anda menerima umpan balik dari pengguna?", "Bagaimana cara memberikan umpan balik tentang aplikasi ini?"],
+        "responses": ["Kami sangat menghargai umpan balik dari pengguna. Anda dapat memberikan umpan balik melalui formulir kontak di website atau melalui fitur umpan balik dalam aplikasi."],
+        "context": ""
+      },
+      {
+        "tag": "data_storage",
+        "patterns": ["Bagaimana data pengguna disimpan dan dielola?", "Apakah aplikasi menyimpan data pengguna?"],
+        "responses": ["Data pengguna disimpan dengan aman dan dielola sesuai dengan kebijakan privasi. Kami tidak menyimpan data lebih dari yang diperlukan untuk memberikan layanan dan prediksi yang diinginkan oleh pengguna."],
+        "context": ""
+      },
+      {
+        "tag": "upcoming_events",
+        "patterns": ["Apakah ada acara atau pelatihan yang akan datang tentang penggunaan aplikasi?", "Bagaimana saya bisa terlibat dalam acara komunitas Anda?"],
+        "responses": ["Kami terkadang menyelenggarakan acara dan pelatihan untuk pengguna kami. Pantau informasi terbaru di situs web dan media sosial kami untuk mengetahui acara atau pelatihan yang akan datang."],
+        "context": ""
+      }
+     
+]
+}
